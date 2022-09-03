@@ -1,0 +1,7 @@
+Running: xsim.dir/dense1_behav/xsimk.exe -simmode gui -wdb dense1_behav.wdb -simrunnum 0 -socket 6072
+Design successfully loaded
+Design Loading Memory Usage: 7404 KB (Peak: 7404 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8304 KB (Peak: 8304 KB)
+Simulation CPU Usage: 108 ms

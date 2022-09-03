@@ -1,0 +1,297 @@
+
+*** Running vivado
+    with args -log softmax.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source softmax.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source softmax.tcl -notrace
+Command: synth_design -top softmax -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19524
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1607.484 ; gain = 130.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'softmax' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:23]
+INFO: [Synth 8-6157] synthesizing module 'exponent' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/exponent.v:23]
+	Parameter width bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/multiplier.v:23]
+	Parameter WIDTH bound to: 20 - type: integer 
+	Parameter frac_bits bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (1#1) [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/multiplier.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/adder.v:23]
+	Parameter WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (2#1) [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'exponent' (3#1) [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/exponent.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'softmax' (4#1) [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1655.164 ; gain = 178.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.164 ; gain = 178.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.164 ; gain = 178.320
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1655.164 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/constrs_1/new/constraints_z7.xdc]
+Finished Parsing XDC File [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/constrs_1/new/constraints_z7.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1762.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1762.289 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1762.289 ; gain = 285.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1762.289 ; gain = 285.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1762.289 ; gain = 285.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "softmax/buffer_reg" of size (depth=10 x width=20) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1762.289 ; gain = 285.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 6     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	              200 Bit	(10 X 20 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   20 Bit        Muxes := 3     
+	   3 Input   20 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	   5 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 13    
+	   4 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "softmax/buffer_reg" of size (depth=10 x width=20) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "softmax/buffer_reg" of size (depth=10 x width=20) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1762.289 ; gain = 285.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------+-----------+----------------------+----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------+-----------+----------------------+----------------+
+|softmax     | buffer_reg | Implied   | 16 x 20              | RAM16X1S x 20  | 
++------------+------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2326.363 ; gain = 849.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2326.438 ; gain = 849.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------+-----------+----------------------+----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------+-----------+----------------------+----------------+
+|softmax     | buffer_reg | Implied   | 16 x 20              | RAM16X1S x 20  | 
++------------+------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2355.055 ; gain = 878.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2355.055 ; gain = 878.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2355.055 ; gain = 878.211
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[3] with 1st driver pin 'cls_addr_reg[3]__0/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:70]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[3] with 2nd driver pin 'cls_addr_reg[3]/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:98]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[3] with 3rd driver pin 'cls_addr_reg[3]__1/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[2] with 1st driver pin 'cls_addr_reg[2]__0/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:70]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[2] with 2nd driver pin 'cls_addr_reg[2]/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:98]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[2] with 3rd driver pin 'cls_addr_reg[2]__1/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[1] with 1st driver pin 'cls_addr_reg[1]__0/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:70]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[1] with 2nd driver pin 'cls_addr_reg[1]/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:98]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[1] with 3rd driver pin 'cls_addr_reg[1]__1/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[0] with 1st driver pin 'cls_addr_reg[0]__0/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:70]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[0] with 2nd driver pin 'cls_addr_reg[0]/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:98]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cls_addr[0] with 3rd driver pin 'cls_addr_reg[0]__1/Q' [C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.srcs/sources_1/new/softmax.v:51]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        4|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2355.055 ; gain = 878.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2355.055 ; gain = 878.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2355.055 ; gain = 878.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2355.055 ; gain = 878.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |     4|
+|2     |LUT1     |     4|
+|3     |LUT2     |    14|
+|4     |LUT3     |     5|
+|5     |LUT4     |    29|
+|6     |LUT5     |    10|
+|7     |LUT6     |    19|
+|8     |RAM16X1S |    16|
+|9     |FDRE     |    56|
+|10    |IBUF     |    18|
+|11    |OBUF     |     5|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2355.055 ; gain = 878.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 2355.055 ; gain = 771.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2355.055 ; gain = 878.211
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2364.887 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2396.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 34 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 18 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+
+Synth Design complete, checksum: e64dda7b
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 0 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 2396.719 ; gain = 1251.164
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dharma/Desktop/InternPreps/Projects/NN/FPGA/digit_classifier/digit_classifier.runs/synth_1/softmax.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file softmax_utilization_synth.rpt -pb softmax_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 25 00:48:36 2022...

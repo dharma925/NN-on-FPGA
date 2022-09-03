@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../digit_classifier.srcs/sources_1/new/adder.v" \
+"../../../../digit_classifier.srcs/sources_1/new/multiplier.v" \
+"../../../../digit_classifier.srcs/sources_1/new/mux.v" \
+"../../../../digit_classifier.srcs/sources_1/new/neuron.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

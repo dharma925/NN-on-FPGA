@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="neuron_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="neuron" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="13,146.666 ns"></ZoomStartTime>
+      <ZoomEndTime time="13,450.667 ns"></ZoomEndTime>
+      <Cursor1Time time="13,377.706 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="255"></NameColumnWidth>
+      <ValueColumnWidth column_width="123"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/neuron/in_val" type="array">
+      <obj_property name="ElementShortName">in_val[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_val[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/clk" type="array">
+      <obj_property name="ElementShortName">clk[15:0]</obj_property>
+      <obj_property name="ObjectShortName">clk[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/out_val" type="array">
+      <obj_property name="ElementShortName">out_val[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_val[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/request_addr" type="array">
+      <obj_property name="ElementShortName">request_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">request_addr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/accumulator" type="array">
+      <obj_property name="ElementShortName">accumulator[15:0]</obj_property>
+      <obj_property name="ObjectShortName">accumulator[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/temp" type="array">
+      <obj_property name="ElementShortName">temp[15:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/status" type="logic">
+      <obj_property name="ElementShortName">status</obj_property>
+      <obj_property name="ObjectShortName">status</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/count" type="array">
+      <obj_property name="ElementShortName">count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">count[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/reference_load" type="array">
+      <obj_property name="ElementShortName">reference_load[9:0]</obj_property>
+      <obj_property name="ObjectShortName">reference_load[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/product" type="array">
+      <obj_property name="ElementShortName">product[15:0]</obj_property>
+      <obj_property name="ObjectShortName">product[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/select" type="logic">
+      <obj_property name="ElementShortName">select</obj_property>
+      <obj_property name="ObjectShortName">select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/add_in1" type="array">
+      <obj_property name="ElementShortName">add_in1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">add_in1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/weights_mem" type="array">
+      <obj_property name="ElementShortName">weights_mem[256:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_mem[256:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/mult_valid" type="logic">
+      <obj_property name="ElementShortName">mult_valid</obj_property>
+      <obj_property name="ObjectShortName">mult_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/addn_valid" type="logic">
+      <obj_property name="ElementShortName">addn_valid</obj_property>
+      <obj_property name="ObjectShortName">addn_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/bias" type="array">
+      <obj_property name="ElementShortName">bias[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bias[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/prev_nodes" type="array">
+      <obj_property name="ElementShortName">prev_nodes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prev_nodes[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/width" type="array">
+      <obj_property name="ElementShortName">width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neuron/weights_file" type="array">
+      <obj_property name="ElementShortName">weights_file[55:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_file[55:0]</obj_property>
+   </wvobject>
+</wave_config>
